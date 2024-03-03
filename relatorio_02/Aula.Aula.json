@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "65e4b0ed32bde5a39da53432"
+  },
+  "assuntos": "Banco de Dados2",
+  "professor": "jonas",
+  "alunos": [
+    {
+      "nomes": [
+        "Leticia",
+        "Ygor",
+        "Guilherme",
+        "Alexia",
+        "Carlos"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65e4c0af32bde5a39da53433"
+  },
+  "assuntos": "Calculo Numerico",
+  "professor": "Karina",
+  "alunos": [
+    {
+      "nomes": [
+        "Leonardo",
+        "Patricia",
+        "Rafael",
+        "Juliana",
+        "Nicoly"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65e4c13a32bde5a39da53434"
+  },
+  "assuntos": "Paradigmas da Programação",
+  "professor": "Marcelo",
+  "alunos": [
+    {
+      "nomes": [
+        "Lucas",
+        "Tayna",
+        "Tamires",
+        "Joao Guilherme"
+      ]
+    }
+  ]
+}]
