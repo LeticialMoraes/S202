@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "65f82d79475c6ee9a3a17179"
+  },
+  "nomeSensor": "Temp1",
+  "valorSensor": 38.53062878433658,
+  "unidadeMedida": "C°",
+  "sensorAlarmado": false
+},
+{
+  "_id": {
+    "$oid": "65f82d91475c6ee9a3a1717a"
+  },
+  "nomeSensor": "Temp2",
+  "valorSensor": 38.49294726251682,
+  "unidadeMedida": "C°",
+  "sensorAlarmado": false
+},
+{
+  "_id": {
+    "$oid": "65f82da4475c6ee9a3a1717b"
+  },
+  "nomeSensor": "Temp3",
+  "valorSensor": 39.124104428743685,
+  "unidadeMedida": "C°",
+  "sensorAlarmado": false
+}]
