@@ -1,0 +1,37 @@
+name,description,query,id,parentId,isFolder
+1° nó,,"CREATE (:Pessoa:Familiar {nome: 'Maria Angela', sexo: 'Feminino', idade: 80})",0,,false
+2° nó,,"CREATE (:Pessoa:Familiar {nome: 'Paulo', sexo: 'Masculino', idade: 81})",1,,false
+3° nó,,"CREATE (:Pessoa:Familiar {nome: 'Alessandro', sexo: 'Masculino', idade: 53})",2,,false
+4° nó,,"CREATE (:Pessoa:Familiar {nome: 'Leticia', sexo: 'Feminino', idade: 23})",3,,false
+5° nó,,"CREATE (:Pessoa:Familiar {nome: 'Gislene', sexo: 'Feminino', idade: 52})",4,,false
+6° Nó,,"CREATE (:Pessoa:Familiar {nome: 'João', sexo: 'MAsculino', idade: 16})",5,,false
+7° nó,,"CREATE (:Pessoa:Familiar {nome: 'Leonardo', sexo: 'Masculino', idade: 25})",6,,false
+8° nó,,"CREATE (:Pessoa:Familiar {nome: 'Joao Paulo', sexo: 'Masculino', idade: 40})",7,,false
+9° nó,,"CREATE (:Pet:Animal {nome: 'Rubi', espécie: 'Cachorro'})",8,,false
+10° nó,,"CREATE (:Pet:Animal {nome: 'Ametista', espécie: 'Cachorro'})",9,,false
+1° relacionamento,,"MATCH (alessandro:Pessoa {nome: 'Alessandro'}), (gislene:Pessoa {nome: 'Gislene'})
+CREATE (alessandro)-[:CASADO_COM]->(gislene)",10,,false
+2° relacionamento,,"MATCH (leticia:Pessoa {nome: 'Leticia'}), (joao:Pessoa {nome: 'João'})
+CREATE (leticia)-[:IRMAO_DE]->(joao)
+",11,,false
+3° relacionamento,,"MATCH (mariaAngela:Pessoa {nome: 'Maria Angela'}), (paulo:Pessoa {nome: 'Paulo'}), (alessandro:Pessoa {nome: 'Alessandro'})
+CREATE (mariaAngela)-[:PAI_DE]->(alessandro), (paulo)-[:PAI_DE]->(alessandro)",12,,false
+4° relacionamento,,"MATCH (joaoPaulo:Pessoa {nome: 'Joao Paulo'}), (alessandro:Pessoa {nome: 'Alessandro'})
+CREATE (joaoPaulo)-[:IRMÃO_DE]->(alessandro)",13,,false
+5° relacionamento,,"MATCH (joaoPaulo:Pessoa {nome: 'Joao Paulo'}), (leticia:Pessoa {nome: 'Leticia'})
+CREATE (joaoPaulo)-[:TIO_DE]->(leticia)",14,,false
+6° relacionamento,,"MATCH (joaoPaulo:Pessoa {nome: 'Joao Paulo'}), (joao:Pessoa {nome: 'João'})
+CREATE (joaoPaulo)-[:TIO_DE]->(joao)
+",15,,false
+7° relacionamento,,"MATCH (alessandro:Pessoa {nome: 'Alessandro'}), (leticia:Pessoa {nome: 'Leticia'})
+CREATE (alessandro)-[:PAI_DE]->(leticia)",16,,false
+8° relacionamento,,"MATCH (alessandro:Pessoa {nome: 'Alessandro'}), (joao:Pessoa {nome: 'João'})
+CREATE (alessandro)-[:PAI_DE]->(joao)",17,,false
+9° relacionamento,,"MATCH (leticia:Pessoa {nome: 'Leticia'}), (leonardo:Pessoa {nome: 'Leonardo'})
+CREATE (leticia)-[:CASADO_COM]->(leonardo)",18,,false
+10° relacionamento,,"MATCH (leticia:Pessoa {nome: 'Leticia'})
+MATCH (ametista:Pet {nome: 'Ametista'})
+MATCH (rubi:Pet {nome: 'Rubi'})
+
+CREATE (leticia)-[:DONO_DE]->(ametista)
+CREATE (leticia)-[:DONO_DE]->(rubi)",19,,false
