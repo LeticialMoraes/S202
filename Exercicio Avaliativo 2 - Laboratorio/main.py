@@ -1,5 +1,4 @@
 from database import Database
-from query import *
 from teacher_crud import TeacherCRUD
 
 def main():
