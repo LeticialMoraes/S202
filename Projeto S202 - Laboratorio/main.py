@@ -16,9 +16,9 @@ def main():
 
 
         db = client['atlas-cluster']
-        livro_dao = LivrosDAO(db)  # Instanciar a classe Biblioteca corretamente
+        livro_dao = LivrosDAO(db) 
         biblioteca_cli = BibliotecaCLI(livro_dao) 
-        biblioteca_cli.executar()  # Chamar o método executar
+        biblioteca_cli.executar()  
 
     
         json_writer = writeAJson()
