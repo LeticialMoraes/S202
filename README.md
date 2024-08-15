@@ -7,5 +7,5 @@ Linguagem: Python <br>
 
 ### Bancos de Dados: 
 MongoDB: Banco de dados NoSQL orientado a documentos. <br>
-Neo4j: Banco de dados de grafos.<br>
-Cassandra: Banco de dados orientado a colunas<br>
+Neo4j: Banco de dados NoSQL orientado a grafos.<br>
+Cassandra: Banco de dados NoSQL orientado orientado a colunas<br>
